@@ -28,15 +28,25 @@ Demonstrate your understanding of this week's concepts by answering the followin
 
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your team lead
 
-1. Describe the biggest difference between `.forEach` & `.map`.
+1. Describe the biggest difference between .forEach & .map.
 
-2. What is the difference between a function and a method?
+The biggest difference is that forEach() allows the mutation of the original array, while map() returns a new array of the same size. map() is also faster.
 
-3. What is closure?
+2.What is the difference between a function and a method?
 
-4. Describe the four rules of the 'this' keyword.
+A function is a piece of code that is called by name and method is a piece of code that is called by a name that is associated with an object. In most respects it is identical to a function except for two key differences A method is implicitly passed the object on which it was called. A method is able to operate on data that is contained within the class remembering that an object is an instance of a class the class is the definition the object is an instance of that data.
 
-5. Why do we need super() in an extended class?
+3.What is closure?
+
+A closure gives you access to an outer function's scope from an inner function.
+
+4.Describe the four rules of the 'this' keyword.
+
+New: If the new keyword is used when calling the funcion, this inside the function is a brand new object. Explicit: If apply, call, or bind are used to call a function this inside a function is the object that is passed as the argument. Implicit: If dot notation is used to invoke a function this is the object that the function is a property of. Window: If a function is invoked without any of the above conditions then this is the global object, i.e. window in most cases.
+
+5.Why do we need super() in an extended class?
+
+It allows the object to access and call functions from the objects parents.
 
 
 

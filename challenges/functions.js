@@ -6,6 +6,11 @@
   * The last parameter accepts a callback
   * The consume function should return the invocation of cb, passing a and b into cb as arguments
 */
+function consume(arg1, arg2, cb) {
+
+	return cb(arg1, arg2);
+
+}
 
 
 /* Step 2: Create several functions to callback with consume();
@@ -13,19 +18,41 @@
   * Create a function named multiply that returns the product of two numbers 
   * Create a function named greeting that accepts a first and last name and returns "Hello first-name last-name, nice to meet you!"
 */
+function add(arg1, arg2) {
+
+	return arg1 + arg2;
+
+}
+
+function multiply(arg1, arg2) {
+
+	return arg1 * arg2;
+
+}
+
+function greeting(firstName, lastName) {
+
+	return `Hello ${firstName} ${lastName}, nice to meet you!`;
+
+}
 
 
 /* Step 3: Check your work by un-commenting the following calls to consume(): */
-// console.log(consume(2, 2, add)); // 4
-// console.log(consume(10, 16, multiply)); // 160
-// console.log(consume("Mary", "Poppins", greeting)); // Hello Mary Poppins, nice to meet you!
+ console.log(consume(2, 2, add)); // 4
+ console.log(consume(10, 16, multiply)); // 160
+ console.log(consume("Mary", "Poppins", greeting)); // Hello Mary Poppins, nice to meet you!
 
 
 // ==== Closures ==== 
 
 // Explain in your own words why nestedfunction can access the variable internal.
 
-// Explanation: 
+// Explanation: // If the variable that is called isn't defined within that function's scope then it will look one level
+
+// up in scope to see if the variable is defined there. That's the case for `internal`. If `internal` weren't
+
+// defined in `myFunction()` then it would look one scope (level) up from that.
+
 
 
 const external = "I'm outside the function";
