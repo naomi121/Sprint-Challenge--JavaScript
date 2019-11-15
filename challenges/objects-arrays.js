@@ -174,22 +174,22 @@ The zoos need a list of all their animal's names (animal_name only) converted to
 
 */
 
-const lowCaseAnimalNames = [];
+let lowerCase= [];
 lowerCase = zooAnimals.map(animal => {
 
 	return animal.animal_name.toLowerCase();
 
 });
-console.log(lowCaseAnimalNames);
+console.log(lowerCase);
 
 /* Request 3: .filter() 
 
 The zoos are concerned about animals with a lower population count. Using filter, create a new array of objects called lowPopulationAnimals which contains only the animals with a population less than 5.
 
 */
-const lowPopulationAnimals = zooAnimals.filter(animal => animal.population < 5);
+const lowerPopulation = zooAnimals.filter(animal => animal.population < 5);
 
-console.log(lowPopulationAnimals);
+console.log(lowerPopulation);
 
 /* Request 4: .reduce() 
 
