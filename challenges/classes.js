@@ -48,7 +48,7 @@ class CuboidMaker {
   
     height: 5,
   
-  })
+  }
   
 
 // Test your volume and surfaceArea methods by uncommenting the logs below:
